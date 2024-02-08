@@ -10,7 +10,19 @@ class Function:
         x = input.data
         y = self.forward(x)
         output = Variable(y)
+        self.input = input
         return output
     
-    def forward(self, x): 
+    def forward(self, x):
+        '''
+        Forward propagation
+        Actual implementation in Child Classes
+        '''
+        raise NotImplementedError()
+    
+    def backward(self, gy):
+        ''' 
+        Back propagation. 
+        Actual implementation in Child Classes
+        '''
         raise NotImplementedError()

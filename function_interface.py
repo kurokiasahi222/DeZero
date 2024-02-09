@@ -10,7 +10,9 @@ class Function:
         x = input.data
         y = self.forward(x)
         output = Variable(y)
-        self.input = input
+        output.set_creator(self)
+        self.input = input  # private variable
+        self.output = output  # private variable
         return output
     
     def forward(self, x):

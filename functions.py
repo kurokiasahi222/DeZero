@@ -1,5 +1,4 @@
 from function_interface import Function
-from variable import Variable
 import numpy as np
 
 '''

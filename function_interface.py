@@ -1,6 +1,5 @@
 from variable import Variable
 
-
 class Function:
     '''
     Function Interface
